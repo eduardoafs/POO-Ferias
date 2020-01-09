@@ -33,7 +33,13 @@ public class BancoApp {
     }
 
     public boolean transferencia(Integer ido, Integer idd, Integer valor) {
-        return contas.get(ido).transferencia(idd, valor);
+        AConta destino;
+        try {
+            destino = contas.get(idd);
+        } catch (ArrayIndexOutOfBoundsException e){
+            destino = null;
+        }
+        return contas.get(ido).transferencia(destino, valor);
     }
 
     public boolean deposito(Integer id, Integer valor) {
