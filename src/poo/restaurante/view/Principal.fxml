@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #aaaaaa;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poo.restaurante.view.Principal">
+   <children>
+      <ScrollPane layoutX="229.0" layoutY="79.0" prefHeight="510.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+         <content>
+            <ListView prefHeight="509.0" prefWidth="180.0" />
+         </content></ScrollPane>
+      <ScrollPane layoutX="14.0" layoutY="79.0" prefHeight="510.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+         <content>
+            <ListView prefHeight="510.0" prefWidth="180.0" />
+         </content></ScrollPane>
+      <ScrollPane layoutX="443.0" layoutY="79.0" prefHeight="510.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+         <content>
+            <ListView prefHeight="510.0" prefWidth="180.0" />
+         </content></ScrollPane>
+      <AnchorPane layoutX="680.0" layoutY="56.0" prefHeight="369.0" prefWidth="305.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button layoutX="14.0" layoutY="328.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: #555555;" text="Desocupar Mesa" textFill="WHITE" />
+            <Separator layoutX="16.0" layoutY="249.0" prefHeight="2.0" prefWidth="274.0" />
+            <Separator layoutX="16.0" layoutY="49.0" prefHeight="3.0" prefWidth="274.0" />
+            <Label layoutX="16.0" layoutY="14.0" text="Mesa">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="215.0" text="Desocupar Mesa">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="65.0" text="Pedido" />
+            <Label layoutX="18.0" layoutY="103.0" text="Garçom" />
+            <ComboBox layoutX="78.0" layoutY="60.0" prefHeight="27.0" prefWidth="213.0" />
+            <ComboBox layoutX="78.0" layoutY="98.0" prefHeight="27.0" prefWidth="213.0" />
+            <Button layoutX="13.0" layoutY="185.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: #555555;" text="Abrir Mesa" textFill="WHITE" />
+            <Label layoutX="17.0" layoutY="272.0" text="Ocupadas" />
+            <ComboBox layoutX="78.0" layoutY="267.0" prefHeight="27.0" prefWidth="213.0" />
+         </children>
+      </AnchorPane>
+      <ToolBar layoutX="14.0" layoutY="8.0" prefHeight="40.0" prefWidth="971.0" style="-fx-background-color: #0000dd;">
+         <items>
+            <Label text="Restaurante" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <Label layoutX="14.0" layoutY="56.0" text="Reservadas">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="56.0" text="Livres">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="56.0" text="Ocupadas">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
