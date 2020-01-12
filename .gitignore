@@ -1,17 +1,1 @@
-
-.DS_Store
-out/production/POO-Ferias/br/ufrn/tads/poo/Main.class
-out/production/POO-Ferias/poo/banco/AConta.class
-out/production/POO-Ferias/poo/banco/BancoApp.class
-out/production/POO-Ferias/poo/banco/Main.class
-out/production/POO-Ferias/poo/banco/UI.class
-out/production/POO-Ferias/poo/restaurante/Cliente.class
-out/production/POO-Ferias/poo/restaurante/Comanda.class
-out/production/POO-Ferias/poo/restaurante/Funcionario.class
-out/production/POO-Ferias/poo/restaurante/Mesa.class
-out/production/POO-Ferias/poo/restaurante/Pedido.class
-out/production/POO-Ferias/poo/restaurante/Pessoa.class
-out/production/POO-Ferias/poo/restaurante/Prato.class
-out/production/POO-Ferias/poo/restaurante/Principal.class
-out/production/POO-Ferias/tads/poo/Circulo.class
-out/production/POO-Ferias/tads/poo/Retangulo.class
+git rm -r --cached *.class
