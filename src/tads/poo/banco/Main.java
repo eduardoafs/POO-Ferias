@@ -3,8 +3,8 @@ package tads.poo.banco;
 public class Main {
     public static void main(String[] args) {
 
-        IConta conta1;
-        IConta conta2;
+        IConta conta1 = null;
+        IConta conta2 = null;
 
         conta1.deposito(200.0);
         conta2.deposito(100.0);
