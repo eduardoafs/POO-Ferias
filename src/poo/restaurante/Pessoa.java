@@ -6,6 +6,12 @@ public class Pessoa {
     private Integer idade;
     private String contato;
 
+    public Pessoa(String nome, Integer idade, String contato) {
+        this.nome = nome;
+        this.idade = idade;
+        this.contato = contato;
+    }
+
     public String getNome() {
         return nome;
     }
