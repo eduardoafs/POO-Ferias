@@ -1,7 +1,13 @@
 package poo.restaurante;
 
-public class Principal { //extends Application {
-/*    @Override
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+    @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("view/Principal.fxml"));
         Parent root = loader.load();
@@ -12,6 +18,4 @@ public class Principal { //extends Application {
     public static void main(String[] args){
         launch(args);
     }
-    */
-
 }
