@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class TestPrato {
 
     public static void main(String[] args) {
+        // Popular o banco dos pratos a partir do arquivo
         Scanner s = new Scanner(System.in);
         String name;
         Double preco;
@@ -17,8 +18,7 @@ public class TestPrato {
             name = s.next();
             if (name.compareTo("-1")==0) break;
             preco = Double.valueOf(s.next());
-            list = new LinkedList<String>();
-            p = new Prato(name, preco, list);
+            p = new Prato(name, preco);
             dao.save(p);
         }
 

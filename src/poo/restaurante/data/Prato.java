@@ -22,16 +22,16 @@ public class Prato implements Serializable {
     @Column(name="preco")
     private Double preco;
 
-    @ElementCollection
-    private Collection<String> ingredientes;
+    //@ElementCollection
+    //private Collection<String> ingredientes;
 
     public Prato() {
 
     }
-    public Prato(String nome, Double preco, Collection<String> ingredientes) {
+    public Prato(String nome, Double preco) { //}, Collection<String> ingredientes) {
         this.nome = nome;
         this.preco = preco;
-        this.ingredientes = ingredientes;
+        //this.ingredientes = ingredientes;
     }
     public Long getId() {
         return id;
@@ -45,9 +45,9 @@ public class Prato implements Serializable {
         return preco;
     }
 
-    public Collection<String> getIngredientes() {
-        return ingredientes;
-    }
+    //public Collection<String> getIngredientes() {
+    //    return ingredientes;
+    //}
 
     public void setNome(String nome) {
         this.nome=nome;
@@ -57,9 +57,9 @@ public class Prato implements Serializable {
         this.id = id;
     }
 
-    public void setIngredientes(Collection<String> ingredientes) {
-        this.ingredientes = ingredientes;
-    }
+    //public void setIngredientes(Collection<String> ingredientes) {
+    //    this.ingredientes = ingredientes;
+    //}
 
     public void setPreco(Double preco) {
         this.preco = preco;
