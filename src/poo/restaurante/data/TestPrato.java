@@ -7,20 +7,20 @@ import java.util.Scanner;
 public class TestPrato {
 
     public static void main(String[] args) {
-        // Popular o banco dos pratos a partir do arquivo
-        Scanner s = new Scanner(System.in);
-        String name;
-        Double preco;
-        List<String> list;
-        Prato p;
+        Prato[] pratos ={
+                new Prato("Macarrão com farofa", 15.50),
+                new Prato("Camarão internacional", 45.2),
+                new Prato("Pão com ovo", 5.30),
+                new Prato("Queijo com goiabada", 8.50),
+                new Prato("Miojo com salsicha", 12.2),
+                new Prato("Coca cola", 5.0),
+                new Prato("Bacalhão acebolado", 38.2),
+                new Prato("Carne com mosquito", 22.3),
+                new Prato("Carne de sol na nata", 39.2)
+        };
+
         PratoDAO dao = PratoDAO.getInstance();
-        while(true) {
-            name = s.next();
-            if (name.compareTo("-1")==0) break;
-            preco = Double.valueOf(s.next());
-            p = new Prato(name, preco);
-            dao.save(p);
-        }
+        for (Prato p : pratos) dao.save(p);
 
         System.out.println("Cardapio");
         for(Prato pr : dao.cardapio())
